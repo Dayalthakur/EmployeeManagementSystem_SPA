@@ -1,0 +1,242 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary mb-4">Employee Management</h2>
+    <button class="btn btn-primary mb-3" onclick="showform()">➕ Add Employee</button>
+
+    <!-- Employee Form -->
+    <div id="createemp" class="card shadow-sm p-3" style="display:none;">
+        <h5 class="text-secondary">Employee Form</h5>
+        <input type="hidden" id="empid" />
+
+        <div class="form-group mt-2">
+            <label>Name</label>
+            <input type="text" id="empname" class="form-control" placeholder="Enter Name" />
+        </div>
+
+        <div class="form-group mt-2">
+            <label>Email</label>
+            <input type="email" id="empemail" class="form-control" placeholder="Enter Email" />
+        </div>
+
+        <div class="form-group mt-2">
+            <label>Mobile</label>
+            <input type="text" id="empmobile" class="form-control" placeholder="Enter Mobile" />
+        </div>
+
+        <div class="form-group mt-2">
+            <label>Gender</label>
+            <select id="empgender" class="form-control">
+                <option value="">--- Select ---</option>
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+            </select>
+        </div>
+
+        <div class="mt-3">
+            <button class="btn btn-success" onclick="saveform()">💾 Save</button>
+            <button class="btn btn-secondary" onclick="closeform()">❌ Cancel</button>
+        </div>
+    </div>
+
+    <hr />
+
+    <!-- Employee Table -->
+    <table class="table table-bordered table-striped shadow-sm" id="emptable">
+        <thead class="thead-dark">
+            <tr class="bg-primary text-white text-center">
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Mobile</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody class="text-center"></tbody>
+    </table>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Custom JS -->
+<script>
+    $(document).ready(function () {
+        loadData();
+    });
+
+    // load all employees
+    function loadData() {
+        $.ajax({
+            url: "/Home/GetAllEmployees",
+            type: "GET",
+            success: function (response) {
+                let rows = "";
+                if (!response.data || response.data.length === 0) {
+                    rows += `<tr><td colspan="6" class="text-center">No Data</td></tr>`;
+                    $('#emptable tbody').html(rows);
+                    return;
+                }
+
+                $.each(response.data, function (key, emp) {
+                    rows += `<tr>
+                                <td>${emp.empId}</td>
+                                <td>${emp.name}</td>
+                                <td>${emp.email}</td>
+                                <td>${emp.mobile}</td>
+                                <td>${emp.gender}</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info" onclick="editform(${emp.empId})">✏️ Edit</button>
+                                    <button class="btn btn-sm btn-danger" onclick="deletedata(${emp.empId})">🗑 Delete</button>
+                                </td>
+                             </tr>`;
+                });
+                $('#emptable tbody').html(rows);
+            }
+        });
+    }
+
+    // show form
+    function showform() {
+        $('#createemp').show();
+    }
+
+    // close form
+    function closeform() {
+        $('#empid').val('');
+        $('#empname').val('');
+        $('#empemail').val('');
+        $('#empmobile').val('');
+        $('#empgender').val('');
+        $('#createemp').hide();
+    }
+
+    // save employee (create or edit)
+    function saveform() {
+        var empid = $('#empid').val();
+        var empname = $('#empname').val();
+        var empemail = $('#empemail').val();
+        var empmobile = $('#empmobile').val();
+        var empgender = $('#empgender').val();
+
+        var obj = {
+            EmpId: empid,
+            Name: empname,
+            Email: empemail,
+            Mobile: empmobile,
+            Gender: empgender
+        };
+
+        var url = empid ? "/Home/Edit" : "/Home/AddEmployee";
+
+        $.ajax({
+            url: url,
+            type: "POST",
+            data: obj,
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message);
+                    closeform();
+                    loadData();
+                }
+            }
+        });
+    }
+
+    // edit employee (load form)
+    function editform(id) {
+        $.ajax({
+            url: "/Home/EditForm?id=" + id,
+            type: "GET",
+            success: function (emp) {
+                $('#empid').val(emp.empId);
+                $('#empname').val(emp.name);
+                $('#empemail').val(emp.email);
+                $('#empmobile').val(emp.mobile);
+                $('#empgender').val(emp.gender);
+                showform();
+            }
+        });
+    }
+
+    // delete employee
+    function deletedata(id) {
+        if (!confirm("Are you sure to delete this record?")) return;
+
+        $.ajax({
+            url: "/Home/Delete?id=" + id,
+            type: "POST",
+            success: function (response) {
+                if (response.success) {
+                    alert(response.message);
+                    loadData();
+                }
+            }
+        });
+    }
+</script>
+
+<!-- Custom CSS -->
+<style>
+    body {
+        background-color: #f8f9fa;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    #createemp {
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    table {
+        margin-top: 15px;
+    }
+
+        table th, table td {
+            vertical-align: middle !important;
+        }
+
+    .btn {
+        border-radius: 20px;
+        padding: 5px 15px;
+    }
+
+    .btn-info {
+        background: #17a2b8;
+        border: none;
+    }
+
+        .btn-info:hover {
+            background: #117a8b;
+        }
+
+    .btn-success {
+        background: #28a745;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background: #1e7e34;
+        }
+
+    .btn-danger {
+        background: #dc3545;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background: #a71d2a;
+        }
+
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+</style>

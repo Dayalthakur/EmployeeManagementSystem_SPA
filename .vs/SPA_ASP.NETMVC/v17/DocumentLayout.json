@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|d:\\projects\\librarymanagementsystem\\spa_asp.netmvc\\spa_asp.netmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|solutionrelative:spa_asp.netmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|d:\\projects\\librarymanagementsystem\\spa_asp.netmvc\\spa_asp.netmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|solutionrelative:spa_asp.netmvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|d:\\projects\\librarymanagementsystem\\spa_asp.netmvc\\spa_asp.netmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|solutionrelative:spa_asp.netmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|d:\\projects\\librarymanagementsystem\\spa_asp.netmvc\\spa_asp.netmvc\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|solutionrelative:spa_asp.netmvc\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|d:\\projects\\librarymanagementsystem\\spa_asp.netmvc\\spa_asp.netmvc\\models\\empdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|solutionrelative:spa_asp.netmvc\\models\\empdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|d:\\projects\\librarymanagementsystem\\spa_asp.netmvc\\spa_asp.netmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FDA80511-9D2E-4C3D-9D9E-CA966F352C72}|SPA_ASP.NETMVC\\SPA_ASP.NETMVC.csproj|solutionrelative:spa_asp.netmvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SPA_ASP.NETMVC\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SPA_ASP.NETMVC\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAAAOcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-28T06:21:56.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SPA_ASP.NETMVC\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SPA_ASP.NETMVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAywEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T06:20:17.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmpDbContext.cs",
+              "DocumentMoniker": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Models\\EmpDbContext.cs",
+              "RelativeDocumentMoniker": "SPA_ASP.NETMVC\\Models\\EmpDbContext.cs",
+              "ToolTip": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Models\\EmpDbContext.cs",
+              "RelativeToolTip": "SPA_ASP.NETMVC\\Models\\EmpDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T06:12:09.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "SPA_ASP.NETMVC\\Models\\Employee.cs",
+              "ToolTip": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Models\\Employee.cs",
+              "RelativeToolTip": "SPA_ASP.NETMVC\\Models\\Employee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T06:09:28.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\appsettings.json",
+              "RelativeDocumentMoniker": "SPA_ASP.NETMVC\\appsettings.json",
+              "ToolTip": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\appsettings.json",
+              "RelativeToolTip": "SPA_ASP.NETMVC\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-28T06:06:33.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Program.cs",
+              "RelativeDocumentMoniker": "SPA_ASP.NETMVC\\Program.cs",
+              "ToolTip": "D:\\Projects\\LibraryManagementSystem\\SPA_ASP.NETMVC\\SPA_ASP.NETMVC\\Program.cs",
+              "RelativeToolTip": "SPA_ASP.NETMVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-28T06:06:31.191Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

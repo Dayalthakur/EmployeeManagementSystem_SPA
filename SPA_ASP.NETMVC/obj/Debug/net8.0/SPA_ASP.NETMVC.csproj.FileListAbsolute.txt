@@ -127,6 +127,7 @@ D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8
 D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8.0\SPA_ASP.NETMVC.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8.0\SPA_ASP.NETMVC.RazorAssemblyInfo.cache
 D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8.0\SPA_ASP.NETMVC.RazorAssemblyInfo.cs
+D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8.0\SPA_ASP.NETMVC.sourcelink.json
 D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8.0\rjimswa.dswa.cache.json
 D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 D:\Projects\LibraryManagementSystem\SPA_ASP.NETMVC\SPA_ASP.NETMVC\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json

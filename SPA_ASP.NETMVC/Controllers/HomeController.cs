@@ -13,20 +13,20 @@ namespace SPA_ASP.NETMVC.Controllers
             _dbcontext = dbcontext;
         }
 
-        // Load Index view
+        
         public IActionResult Index()
         {
             return View();
         }
 
-        // Get all employees
+        
         public ActionResult GetAllEmployees()
         {
             var emp = _dbcontext.Employees.ToList();
             return Json(new { data = emp });
         }
 
-        // Add employee
+        
         [HttpPost]
         public ActionResult AddEmployee(Employee emp)
         {
@@ -35,7 +35,7 @@ namespace SPA_ASP.NETMVC.Controllers
             return Json(new { success = true, message = "Record Added Successfully" });
         }
 
-        // Get one employee by id (for edit form)
+        
         public ActionResult EditForm(int id)
         {
             var emp = _dbcontext.Employees.FirstOrDefault(e => e.EmpId == id);
@@ -46,16 +46,21 @@ namespace SPA_ASP.NETMVC.Controllers
             return Json(emp);
         }
 
-        // Update employee
+        
         [HttpPost]
         public ActionResult Edit(Employee emp)
         {
+            if (emp == null)
+            {
+                return View();
+            }
             _dbcontext.Employees.Update(emp);
             _dbcontext.SaveChanges();
+            
             return Json(new { success = true, message = "Record Updated Successfully" });
         }
 
-        // Delete employee
+        
         [HttpPost]
         public ActionResult Delete(int id)
         {

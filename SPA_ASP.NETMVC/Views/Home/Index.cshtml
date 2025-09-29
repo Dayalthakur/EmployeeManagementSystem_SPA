@@ -6,7 +6,7 @@
     <h2 class="text-center text-primary mb-4">Employee Management</h2>
     <button class="btn btn-primary mb-3" onclick="showform()">➕ Add Employee</button>
 
-    <!-- Employee Form -->
+   
     <div id="createemp" class="card shadow-sm p-3" style="display:none;">
         <h5 class="text-secondary">Employee Form</h5>
         <input type="hidden" id="empid" />
@@ -43,7 +43,7 @@
 
     <hr />
 
-    <!-- Employee Table -->
+    
     <table class="table table-bordered table-striped shadow-sm" id="emptable">
         <thead class="thead-dark">
             <tr class="bg-primary text-white text-center">
@@ -59,16 +59,16 @@
     </table>
 </div>
 
-<!-- jQuery -->
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-<!-- Custom JS -->
+
 <script>
     $(document).ready(function () {
         loadData();
     });
 
-    // load all employees
+    
     function loadData() {
         $.ajax({
             url: "/Home/GetAllEmployees",
@@ -99,12 +99,12 @@
         });
     }
 
-    // show form
+   
     function showform() {
         $('#createemp').show();
     }
 
-    // close form
+   
     function closeform() {
         $('#empid').val('');
         $('#empname').val('');
@@ -114,7 +114,7 @@
         $('#createemp').hide();
     }
 
-    // save employee (create or edit)
+    
     function saveform() {
         var empid = $('#empid').val();
         var empname = $('#empname').val();
@@ -146,7 +146,7 @@
         });
     }
 
-    // edit employee (load form)
+    
     function editform(id) {
         $.ajax({
             url: "/Home/EditForm?id=" + id,
@@ -162,7 +162,7 @@
         });
     }
 
-    // delete employee
+    
     function deletedata(id) {
         if (!confirm("Are you sure to delete this record?")) return;
 
@@ -179,7 +179,7 @@
     }
 </script>
 
-<!-- Custom CSS -->
+
 <style>
     body {
         background-color: #f8f9fa;
